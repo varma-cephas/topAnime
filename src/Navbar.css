@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    border: 2px solid pink;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+nav ul{
+    /* border: 2px solid red; */
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin: 0 9.5rem 0 0rem;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav div{
+    text-align: left;
+    margin: 0 auto 0 9.5rem;
+}
+
+nav div a{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+.mobileNav{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+
+    .mobileNav .logoHamburgerContainer{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    .mobileNav .logoHamburgerContainer a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobileNav .logoHamburgerContainer img{
+        cursor: pointer;
+    }
+
+    .mobileNav{
+         border: 2px solid pink;
+         display: block;
+         font-size: 1.1rem;
+    }
+
+    .mobileNav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: 2px solid green;
+        text-align: center;
+        display: none;
+    }
+
+    
+
+    .mobileNav ul a{
+        text-decoration: none;
+        color: black;
+    }
+}
